@@ -43,6 +43,15 @@ class TestRSSReader(unittest.TestCase):
         actual = list(rss_reader.search_by_keywords(keywords, self.expected_rss_parsed_dict))
 
         self.assertListEqual(expected, actual)
+
+
+    def test_get_article_by_guid(self):
+        expected = self.expected_rss_parsed_dict.get('items')[0]
+        guid = 'world-europe-38691103'
+
+        actual = rss_reader.get_article(guid, self.expected_rss_parsed_dict)
+
+        self.assertDictEqual(expected, actual)
         
 if __name__ == '__main__':
     unittest.main()
