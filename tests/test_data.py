@@ -42,4 +42,29 @@ test_feed = '''<?xml version="1.0" encoding="UTF-8"?>
     </channel>
 </rss>'''
 
-test_parsed_dict = {'description': 'BBC News - World', 'published': 'Fri, 20 Jan 2017 13:32:00 GMT', 'image': 'http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif', 'title': 'BBC News - World', 'items': [{'thumbnail': 'http://c.files.bbci.co.uk/78D0/production/_93682903_hi037382118.jpg', 'description': 'Two children are among the eight who have spent at least 40 hours buried in snow and rubble.', 'link': 'http://www.bbc.co.uk/news/world-europe-38691103', 'title': 'Rigopiano avalanche: Eight found alive in Italy hotel after two days'}, {'thumbnail': 'http://c.files.bbci.co.uk/9201/production/_93677373_gambia.jpg', 'description': 'Regional leaders are in Gambia to persuade Yahya Jammeh to transfer power to his successor.', 'link': 'http://www.bbc.co.uk/news/world-africa-38686144', 'title': 'Gambia crisis: Jammeh given last chance to resign as troops close in'}, {'thumbnail': 'http://c.files.bbci.co.uk/102A/production/_93683140_unosat_palmyra_tetrapylon_amphitheatre_10january2017_dg_wv02.png', 'description': "IS militants destroy part of the Roman Theatre's facade and a nearby monument.", 'link': 'http://www.bbc.co.uk/news/world-middle-east-38689131', 'title': "Syria: IS destroys part of Palmyra's Roman Theatre"}]}
+test_parsed_dict = {
+    'description': 'BBC News - World',
+    'published': 'Fri, 20 Jan 2017 13:32:00 GMT',
+    'image': 'http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif',
+    'title': 'BBC News - World',
+    'items': [
+        {
+            'thumbnail': 'http://c.files.bbci.co.uk/78D0/production/_93682903_hi037382118.jpg',
+            'description': 'Two children are among the eight who have spent at least 40 hours buried in snow and rubble.',
+            'link': 'http://www.bbc.co.uk/news/world-europe-38691103',
+            'title': 'Rigopiano avalanche: Eight found alive in Italy hotel after two days'
+        },
+        {
+            'thumbnail': 'http://c.files.bbci.co.uk/9201/production/_93677373_gambia.jpg',
+            'description': 'Regional leaders are in Gambia to persuade Yahya Jammeh to transfer power to his successor.',
+            'link': 'http://www.bbc.co.uk/news/world-africa-38686144',
+            'title': 'Gambia crisis: Jammeh given last chance to resign as troops close in'
+        },
+        {
+            'thumbnail': 'http://c.files.bbci.co.uk/102A/production/_93683140_unosat_palmyra_tetrapylon_amphitheatre_10january2017_dg_wv02.png',
+            'description': "IS militants destroy part of the Roman Theatre's facade and a nearby monument.",
+            'link': 'http://www.bbc.co.uk/news/world-middle-east-38689131',
+            'title': "Syria: IS destroys part of Palmyra's Roman Theatre"
+        }
+    ]
+}
