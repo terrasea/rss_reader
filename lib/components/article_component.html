@@ -1,0 +1,6 @@
+<div *ngIf="article != null">
+    <div [id]="link">{{link}}</div>
+    <a [href]="link" target="_blank">Read Article</a>
+    <material-button raised
+                     (trigger)="goBack()">Back</material-button>
+</div>
