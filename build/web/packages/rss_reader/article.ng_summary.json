@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "Article": {
+      "class": "Identifier",
+      "name": "Article",
+      "moduleUrl": "asset:rss_reader/lib/article.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

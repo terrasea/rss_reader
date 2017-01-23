@@ -1,0 +1,181 @@
+{
+  "ngDeps": {
+    "1": "rss_reader.article_component",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/platform/common.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2_components/angular2_components.dart",
+        "5": false
+      },
+      {
+        "1": "package:rss_reader/article.dart",
+        "5": false
+      },
+      {
+        "1": "package:rss_reader/services/article_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "ArticleComponent",
+        "5": [
+          {
+            "1": "ArticleService",
+            "4": "_articleService"
+          },
+          {
+            "1": "RouteParams",
+            "4": "_routeParams"
+          },
+          {
+            "1": "Location",
+            "4": "_location"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "materialDirectives"
+          }
+        ]
+      }
+    ],
+    "6": "article_component.dart"
+  },
+  "type": {
+    "ArticleComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "article-view",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ArticleComponent",
+        "moduleUrl": "asset:rss_reader/lib/components/article_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ArticleService",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "RouteParams",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Location",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div *ngIf=\"article != null\">\n    <div [id]=\"link\">{{link}}</div>\n    <a [href]=\"link\" target=\"_blank\">Read Article</a>\n    <material-button raised\n                     (trigger)=\"goBack()\">Back</material-button>\n</div>",
+        "templateUrl": "asset:rss_reader/lib/components/article_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:rss_reader/lib/components/article_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "ArticleService",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "materialProviders",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
