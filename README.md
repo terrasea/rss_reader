@@ -10,7 +10,7 @@ Normally you'd have [Dart](https://www.dartlang.org/) installed.  You would buil
 
 ```
 pub build
-'''
+```
 
 This will output the files to build, with the entry point being build/web/index.html.
 
